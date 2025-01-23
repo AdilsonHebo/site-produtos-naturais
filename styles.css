@@ -1,0 +1,555 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+   scroll-behavior: smooth;
+}
+body{
+    background: white;
+  
+}
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #520066;
+    border-radius: 5px;
+}
+section.menuG{
+    width: 100%;
+    height: 80px;
+    box-shadow: 0px 0px 7px rgba(0,0,0,0.5);
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0PX 30PX;
+    position: fixed;
+    top: 0px;
+    z-index: 5;
+}
+div.menu-btn{
+    display: none;
+}
+
+
+
+div.menu ul{
+    display: flex;
+    flex-direction: row;
+}
+div.menu ul li,a{
+    list-style: none;
+    text-decoration: none;
+
+}
+div.menu ul li{
+margin: 0px 14px;
+}
+div.menu ul li a{
+    font-size: 17px;
+    color: #520066;
+    transition: all 1s;
+    padding: 5px;
+}
+div.menu ul li a:hover{
+    color: #000000;
+}
+
+div.logo h3{
+    color: #520066;
+}
+
+div.menu ul li a#btn-contact{
+    background: #520066;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 8px;
+    transition: all 1s;
+}
+div.menu ul li a#btn-contact:hover{
+    background: #000000;
+}
+
+/* trabalhando o home */
+section.home{
+    width: 100%;
+    height: 100vh;
+    background-image: url(files/cards-files/home.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 80px;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   padding: 30px;
+    align-items: center;
+}
+section.home h1{
+    color: #520066;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+section.home h3{
+    color: #000000;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+section.home p{
+    color: #520066;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+section.home a#btn-more{
+    padding: 10px 25px;
+    background: #520066;
+    color: white;
+    border-radius: 5px;
+    transition: all 1s;
+}
+section.home a#btn-more:hover{
+    background: #000000;
+}
+
+/* trabalhando com os produtos */
+section.produtos{
+    width: 100%;
+    min-height: 600px;
+    box-shadow: 0px 0px 7px #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+section.produtos h2{
+    color: #520066;
+    margin-bottom: 30px;
+
+}
+div.card-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+div.card-container div.card{
+    width: 225px;
+    height: 250px;
+    box-shadow: 4px 4px 12px #520066;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 18px;
+    transform: translateX(-400px);
+    animation: animation-cards 4s forwards alternate;
+    animation-timeline:view() ;
+    animation-range: entry 15% cover 25% ;
+}
+div.card-container div.card{
+
+}
+@keyframes animation-cards{
+to{
+    transform: translateX(0px);
+}
+}
+
+div.card div.card-photo1{
+    width: 150px;
+    height: 100px;
+    background-image: url(files/cards-files/limão.jpg);
+    background-position: center;
+    background-size: 80%;
+    background-repeat: no-repeat;
+}
+div.card div.card-photo2{
+    width: 150px;
+    height: 100px;
+    background-image: url(files/cards-files/banana.jpg);
+    background-position: center;
+    background-size: 80%;
+    background-repeat: no-repeat;
+}
+div.card div.card-photo3{
+    width: 150px;
+    height: 100px;
+    background-image: url(files/cards-files/laranja.PNG);
+    background-position: center;
+    background-size: 80%;
+    background-repeat: no-repeat;
+}
+div.card div.card-photo4{
+    width: 150px;
+    height: 100px;
+    background-image: url(files/cards-files/maçan.PNG);
+    background-position: center;
+    background-size: 80%;
+    background-repeat: no-repeat;
+}
+div.card-body{
+    text-align: center;
+}
+div.card-body h3{
+    color: #520066;
+    margin-bottom: 5px;
+}
+div.card-body p {
+margin-bottom: 5px;
+}
+div.card-body h4{
+    color: #520066;
+    margin-bottom: 8px;
+    font-size: 21px;
+}
+div.card-footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+div.card-footer a div.img-eye{
+    width: 25px;
+    height: 25px;
+    background-image: url(files/cards-files/eye.png);
+    background-position: center;
+    background-size: cover;
+}
+div.card-footer a.btn-compra{
+    background: #520066;
+    color: white;
+    padding: 2px 45px;
+    border-radius: 5px;
+    transition: all 1s;
+    transition: all 1s;
+}
+div.card-footer a.btn-compra:hover{
+    background: #000000;
+}
+
+/* trabalhando com banner */
+section.banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+section.banner img{
+    width: 50%;
+    height: auto;
+    max-height: 600px;
+    animation: animation-banner 2s forwards alternate;
+    animation-timeline:view();
+    animation-range:entry 15%  cover 25% ;
+}
+@keyframes animation-banner{
+    to{
+        width: 100%;
+    }
+}
+/* trabalhando com contactos */
+section.contactos{
+    width: 100%;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    padding:40px;
+   
+    flex-wrap: wrap;
+}
+
+.croll-contacts{
+    transform: translateX(-500px);
+    animation: animation-scrollContact 3s forwards alternate;
+    animation-timeline:view();
+    animation-range:entry 15% cover 25% ;
+}
+
+@keyframes animation-scrollContact{
+    to{
+        transform: translateX(0px);
+    }
+}
+section.contactos h2{
+    color: #520066;
+    margin-bottom: 25px;
+}
+section.contactos div.icon-face{
+    background-image: url(files/cards-files/F.png);
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+section.contactos div.icon-whats{
+    background-image: url(files/cards-files/Whats.png);
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+section.contactos div.icon-instag{
+    background-image: url(files/cards-files/INST.png);
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+div.redes a{
+    margin-left: 30px;
+}
+a#networks:hover{
+transform: translateY(-18px);
+transition: all 1s;
+}
+section.contactos div.redes{
+    display: flex;
+    flex-direction: row;
+ margin-bottom: 40px;
+    height: 40px;
+    border-bottom: solid #520066 3px;
+}
+div.phone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div.phone div.icon-phone{
+background-image: url(files/cards-files/phone.png);
+width: 30px;
+height: 30px;
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+div.phone p#phone-contact{
+    margin-left: 10px;
+}
+
+/* trabalhando com map */
+div.mapa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+border-bottom: #520066  solid 3px;
+    padding: 20px;
+    perspective: 180%;
+}
+div.mapa img{
+width: 90%;
+height: auto;
+max-height: 400px;
+transition: all 2s;
+cursor: pointer;
+}
+div.mapa img:hover{
+    transform: rotateY(40deg);
+}
+
+/* trabalhando com rodapé */
+
+footer.footer-section{
+    width: 100%;
+    height: 50px;
+    background-color: #520066;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 20px;
+}
+footer.footer-section p{
+    font-size: 18px;
+}
+
+button#close{
+    display: none;
+}
+/* trabalhando com responsividade */
+@media(max-width:570px){
+    div.menu-btn{
+        display: block;
+        font-size: 22px;
+        background-color: #520066;
+        border-radius: 5px;
+        padding: 2px 7px;
+        color: white;
+        cursor: pointer;
+        transition: all 1s;
+    }
+    div.menu-btn:hover{
+        border-radius: 50px;
+    }
+    div.menu{
+       background-color: white; 
+       width: 250px;
+       height: 100vh;
+     position: absolute;
+     top: 80px;
+     left: -400px;
+    border-right: 1px solid #520066;
+    }
+    div#menuNav.classView{
+        left:0px;
+        transition: ease-in-out 1s;
+    }
+    div.menu ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    div.menu ul li{
+        margin: 15px 0px;
+        }
+        button#close{
+            display: block;
+            padding:  8px;
+           border-radius: 50px;
+            outline: none;
+            border: none;
+            color: red;
+            cursor: pointer;
+            background-color: white;
+            font-size: 25px;
+        }
+        div.phone div.icon-phone{
+            width: 25px;
+            height: 25px;
+           
+            }
+}
+
+
+@media(max-width:360px){
+  
+    a#btn-more{
+        padding: 5px 14px;
+        font-size: 12px;
+       }
+       section.home h1{
+        color: #520066;
+        margin-bottom: 10px;
+        font-size: 25px;
+    }
+    section.home h3{
+     
+        font-size: 20px;
+       
+    }
+    section.home p{
+        
+        font-size: 15px;
+      
+    }
+
+    div.card-container div.card{
+        width: 215px;
+        height: 250px;
+        box-shadow: 4px 4px 12px #520066;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        margin: 18px;
+    }
+
+    section.contactos{
+      
+        justify-content: center;
+        
+    }
+    section.contactos h2{
+        
+        text-align: center;
+        
+      
+    }
+
+    footer.footer-section p{
+        font-size: 13px;
+        text-align: center;
+    }
+}
+
+@media(max-width:830px){
+    section.contactos{
+        justify-content: center;
+    }
+}
+
+.iten-home{
+    transform: translateY(330px);
+    animation: animation-itens-home 2s forwards alternate;
+}
+.iten-home:nth-child(1){
+animation-delay: 0.2s;
+}
+.iten-home:nth-child(2){
+animation-delay: 0.4s;
+}
+.iten-home:nth-child(3){
+animation-delay: 0.6s;
+}
+.iten-home:nth-child(4){
+animation-delay: 0.8s;
+}
+
+@keyframes animation-itens-home{
+    to{
+        transform: translateY(0px);
+    }
+}
+
+/* trabalhando com preload */
+
+div.preload{
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    position: fixed;
+    top: 0px;
+    z-index: 8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+div.preload div.load{
+    width: 25px;
+    height: 25px;
+    border: solid 2px #520066;
+    margin-left: 20px;
+    border-radius: 50px;
+    animation: animation-load 0.5s infinite alternate;
+}
+
+@keyframes animation-load{
+    to{
+        transform: translateY(-35px);
+        box-shadow: 0px 0px 20px #520066, 0px 0px 35px #520066;
+        background: #520066;
+    }
+}
+div.preload div.load:nth-child(1){
+animation-delay: 0.2s;
+}
+div.preload div.load:nth-child(2){
+animation-delay: 0.4s;
+}
+div.preload div.load:nth-child(3){
+animation-delay: 0.6s;
+}
+div.preload div.load:nth-child(4){
+animation-delay: 0.8s;
+}
+
